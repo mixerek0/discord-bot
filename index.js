@@ -76,12 +76,6 @@ else {
         }
         handleCommand()
     })
-        client.user.setPresence({
-        status: "online",  
-        game: {
-            name: "elo leszcze kleszcze", 
-            type: "STREAMING" 
-        }
-    })
+
     client.login(TOKEN)
 }
