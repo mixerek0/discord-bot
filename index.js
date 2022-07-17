@@ -17,7 +17,15 @@ const client = new Discord.Client({
     intents: [
         "GUILDS",
         "GUILD_VOICE_STATES"
-    ]
+    ],
+    presence: {
+        status: 'dnd',
+        afk: false,
+        activities: [{
+            name: "SIEBIE 🤙💪😎",
+            type: 'WATCHING'
+        }]
+    }
 })
 
 client.slashcommands = new Discord.Collection()
